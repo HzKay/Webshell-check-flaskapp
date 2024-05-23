@@ -1,5 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "serve.py" }
+  "version": 2,
+  "builds": [
+      {
+          "src": "*.py",
+          "use": "@HzKay/python"
+      }
+  ],
+  "routes": [
+      {
+          "src": "(.*)",
+          "dest": "app.py"
+      }
   ]
 }

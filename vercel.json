@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
       {
-          "src": "*.py",
+          "src": "serve.py",
           "use": "@HzKay/python"
       }
   ],
   "routes": [
       {
           "src": "(.*)",
-          "dest": "app.py"
+          "dest": "serve.py"
       }
   ]
 }
